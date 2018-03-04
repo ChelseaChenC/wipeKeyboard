@@ -111,11 +111,16 @@ io.sockets.on('connection',
 });
 
 
-
 function next(){
+  console.log(current_user);
 	let currentUserIndex = user_list.indexOf(current_user);
-	current_user = user_list[(currentUserIndex + 1)/user_list.length];
+  // console.log(currentUserIndex);
+	current_user = user_list[(currentUserIndex + 1)%user_list.length];
   sync();
+    // console.log(current_user);
+    // console.log(user_list);
+
+
 
 }
 

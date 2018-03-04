@@ -68,7 +68,7 @@ function draw() {
          updatedText += word.charAt(i)
      }
 
-    text(updatedText, 250, 100);
+    text(updatedText, 250, 150);
     text("you pressed " + current_mappedkey, 300, 200);
 
 
